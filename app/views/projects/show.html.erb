@@ -6,7 +6,7 @@
       <span><%= @project.name %></span>
       <div>
         <%= link_to 'Edit', edit_project_path(@project), class: 'btn btn-light btn-sm' %>
-        <%= link_to 'Delete', (@project), method: :destroy, data: { confirm: 'Are you sure?' }, class: 'btn btn-dark btn-sm' %>
+        <%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-dark btn-sm' %>
       </div>
     </h2>
 
@@ -50,7 +50,6 @@
                 <%= link_to 'Delete', [task.project, task], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-dark btn-sm' %>
               </div>
             </div>
-            <%= task.status %>
             <h5 class='card-title'>
               <span>
                 <%= task.name %>

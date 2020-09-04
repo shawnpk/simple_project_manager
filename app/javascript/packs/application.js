@@ -7,7 +7,7 @@ require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
-require("bootstrap/scss/bootstrap");
+require("bootstrap/dist/js/bootstrap");
 
 import Sortable from "sortablejs";
 import "../stylesheets/application";

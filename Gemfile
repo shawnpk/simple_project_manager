@@ -62,5 +62,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Custom
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'nested_scaffold', '~> 1.1'
-gem "stimulus_reflex", "~> 3.2"
+gem "stimulus_reflex", "~> 3.3.0.pre2"
 gem 'view_component', '~> 2.18', '>= 2.18.1'

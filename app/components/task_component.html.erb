@@ -8,7 +8,7 @@
         </div>
         <div>
           <%= render StatusChangerComponent.new(task_id: task_id, status: status) %>
-          <%= link_to edit_project_task_path(project, task), class: 'btn btn-light btn-sm' do %>
+          <%= link_to edit_project_task_path(project, task), class: 'btn btn-secondary btn-sm' do %>
             <i class="far fa-edit"></i>
           <% end %>
           <%= link_to [project, task], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-dark btn-sm' do %>

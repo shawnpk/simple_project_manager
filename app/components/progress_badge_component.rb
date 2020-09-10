@@ -15,4 +15,15 @@ class ProgressBadgeComponent < ViewComponent::Base
       'success'
     end
   end
+
+  def readable_status
+    case status
+    when 'not-started'
+      'Not started'
+    when 'in-progress'
+      'In progress'
+    when 'complete'
+      'Complete'
+    end
+  end
 end
